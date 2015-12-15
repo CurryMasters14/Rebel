@@ -1,4 +1,5 @@
 PImage back;
+PImage backA;
 PFont mono;
 
 void setup() {
@@ -9,6 +10,8 @@ void setup() {
   
   mono = loadFont("Chalkduster-48.vlw");
 
+backA = loadImage("arrow.png");
+backA.resize(120,50);
 }
 
 void draw() {
@@ -33,4 +36,10 @@ void draw() {
   textSize(50);
   text("Music :", 100, 220);
   text("Sound :", 100, 400);
+
+//back button 
+noStroke();
+fill(0,0,255);
+rect(5,5,120,50);
+image(backA,5,5);
 }
