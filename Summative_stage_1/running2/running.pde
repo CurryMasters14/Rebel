@@ -1,7 +1,7 @@
 
 
 PImage[] images = new PImage[5];
-int frame=0;
+int frame=0, x = 30;
 
 void setup() {
   size(400, 400);
@@ -18,9 +18,7 @@ void draw() {
   image(images[frame] ,0, 0);
   frame++;
   if (frame > 4) frame = 0;
+ 
+  fill(255,0,0);
+  ellipse(170, 50,x,x);
 }
-
-
-
-
-
